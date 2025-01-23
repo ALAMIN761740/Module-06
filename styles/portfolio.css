@@ -257,3 +257,30 @@ footer input[type="text"], footer input[type="email"], footer textarea {
     font-size: 25px;
 
 }
+
+
+/* Responsive */
+
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+    .skill-container, .about-items{
+        flex-direction: column;
+    }
+    .resume-container, footer {
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px ;
+        gap: 10px;
+    }
+    .footer-colum{
+        width: 100%;
+        
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+    
+}
